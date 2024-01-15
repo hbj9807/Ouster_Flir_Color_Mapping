@@ -67,7 +67,8 @@ https://github.com/hku-mars/r3live#21-strong-robustness-in-various-challenging-s
 
 roslaunch r3live r3live_bag_ouster.launch
 rosbag play xxx.bag 
-# -r 0.5: play speed x0.5
-# -s 10: play after 10s
+ex) 
+ -r 0.5: play speed x0.5
+ -s 10: play after 10s
 
 roslaunch r3live r3live_reconstruct_mesh.launch
