@@ -56,11 +56,16 @@ matrix calculator: https://staff.aist.go.jp/k.koide/workspace/matrix_converter/m
 
 # livox_ros_driver_for_R2LIVE Install
 https://github.com/ziv-lin/livox_ros_driver_for_R2LIVE
+input: serial #
+roslaunch livox_ros_driver livox_lidar.launch
+(xfer_format: 0 --> PointCloud2 msg
+            : 1 --> CustomMsg)
 
 # Record Data
 roslaunch ouster_ros driver.launch
 roslaunch flir_adk_ethernet blackfly.launch
 rosbag record -b 2048 /ouster/points /ouster/imu /flir_adk/image_raw
+rosbag record -b 2048 /livox/lidar /livox/imu /flir_adk/image_raw
 
 # R3LIVE Install
 https://github.com/hku-mars/r3live#21-strong-robustness-in-various-challenging-scenarios
