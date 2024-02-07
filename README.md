@@ -55,11 +55,11 @@ matrix calculator: https://staff.aist.go.jp/k.koide/workspace/matrix_converter/m
   3x1: translation matrix
 
 # livox_ros_driver_for_R2LIVE Install
-https://github.com/ziv-lin/livox_ros_driver_for_R2LIVE
-input: serial #
-roslaunch livox_ros_driver livox_lidar.launch
-(xfer_format: 0 --> PointCloud2 msg
-            : 1 --> CustomMsg)
+https://github.com/ziv-lin/livox_ros_driver_for_R2LIVE /
+input: serial # /
+roslaunch livox_ros_driver livox_lidar.launch /
+(xfer_format: 0 --> PointCloud2 msg /
+            : 1 --> CustomMsg) /
 
 # Record Data
 roslaunch ouster_ros driver.launch
